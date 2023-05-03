@@ -15,9 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGN-Z0-ybn">
-                                <rect key="frame" x="95" y="79" width="224" height="214"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGN-Z0-ybn">
+                                <rect key="frame" x="95" y="91" width="224" height="214"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="drumImage"/>
                                 <connections>
@@ -25,9 +24,8 @@
                                     <action selector="touchUpDrumButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="lTE-XB-GDJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dle-Ns-Jao">
-                                <rect key="frame" x="96" y="342" width="224" height="214"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dle-Ns-Jao">
+                                <rect key="frame" x="95" y="341" width="224" height="214"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="pianoImage"/>
                                 <connections>
@@ -35,9 +33,8 @@
                                     <action selector="touchUpPianoButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="5J8-Nd-2ZN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uf5-kg-0gq">
-                                <rect key="frame" x="97" y="581" width="224" height="214"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uf5-kg-0gq">
+                                <rect key="frame" x="95" y="591" width="224" height="214"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="guitarImage"/>
                                 <connections>
@@ -48,6 +45,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="rGN-Z0-ybn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QnL-xa-ZKw"/>
+                            <constraint firstItem="Dle-Ns-Jao" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dc8-PI-I1Q"/>
+                            <constraint firstItem="uf5-kg-0gq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="250" id="hJF-lW-FR6"/>
+                            <constraint firstItem="rGN-Z0-ybn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-250" id="jA5-vG-4DS"/>
+                            <constraint firstItem="Dle-Ns-Jao" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mEl-X0-9LV"/>
+                            <constraint firstItem="uf5-kg-0gq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nWE-Qt-PFN"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="drumButton" destination="rGN-Z0-ybn" id="yer-ll-9Or"/>
